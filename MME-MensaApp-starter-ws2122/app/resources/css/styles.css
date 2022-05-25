@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "RalewayRegular";
+    src: url("./fonts/Raleway/Raleway-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hidden {
+    opacity: 0 !important;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;  
+    background: rgba(255, 255, 255, 1);
+    font-family: 'RalewayRegular';
+    color: #333;
+}
+
+header {
+    width: 90vw;
+    height: 6vh;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2vh;
+    line-height: 6vh;
+    color: #EE4037;
+}
+
+footer {
+    position: fixed;
+    width: 90vw;
+    height: 3vh;
+    margin: 0 auto;
+    bottom: 3vh;
+    left: 5vw;
+    font-weight: 300;
+    line-height: 3vh;
+    color: #EE4037;
+    text-align: right;
+}
+
+footer a {
+
+    color: #333;
+}
+
+#content {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.day-selector {
+    display: flex;
+    width: 90vw;
+    height: 5%;
+    margin: 0;
+    padding: 0;
+    border-style: solid;
+    border-width: 2px 0 2px 0;
+    border-color: #EE4037;
+}
+
+.day-selector li {
+    display: block;
+    width: 17vw;
+    padding: 0.5vw;
+    list-style-type: none;
+    background-color: #FFF;
+    text-align: center;
+    color: #EE4037;
+}
+
+.day-selector li:hover:not(.selected) {
+    background-color: #EE4037;
+    opacity: 0.9;
+    cursor: pointer;
+    color: #FFF;
+}
+
+.day-selector li.selected {
+    background-color: #EE4037;
+    color: #FFF;
+}
+
+.daily-menu {
+    display: flex;
+    width: 90vw;
+    margin: 2vh auto;
+    padding: 0;
+}
+
+.daily-menu .category {
+    display: block;
+    width: 22.5vw;
+    padding: 0;
+    margin: 0;
+    padding: 0; 
+}
+
+.daily-menu .category li {
+    display: block;
+    clear: both;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+
+.daily-menu .category .label {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 50px;
+    color: #EE4037; 
+}
+
+.daily-menu .category .label:before {
+    content: ' ~ ';
+}
+
+.daily-menu .category .label:after {
+    content: ' ~ ';
+}
+
+.daily-menu .category .entry {
+    display: block;
+    width: 20vw;
+    margin: 0.5vw auto;
+    padding: 2vh 0.5vw;
+    background-color: #FCFCFC;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #EFEFEF;
+    overflow: hidden;
+    opacity: 1;
+    -moz-transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+    text-transform: uppercase;
+    font-size: 1.15em;
+    font-weight: 500;
+    color: #EE4037;
+}

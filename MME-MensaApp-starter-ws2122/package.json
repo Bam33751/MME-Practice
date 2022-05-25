@@ -1,0 +1,27 @@
+{
+    "name": "mme-demo-05-mensaapp",
+    "version": "1.0.0",
+    "description": "A simple application for gathering information about meals of the UR-Mensa",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "setup": "npm install",
+        "start": "node index.js",
+        "eslint": "eslint --format table app/resources/js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-MensaApp.git"
+    },
+    "author": "Alexander Bazo <alexander.bazo@ur.de>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-MensaApp/issues"
+    },
+    "homepage": "https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-MensaApp#readme",
+    "dependencies": {
+        "eslint": "^8.0.1",
+        "express": "^4.17.1",
+        "open": "^8.3.0"
+    }
+}
